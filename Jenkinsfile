@@ -4,7 +4,7 @@ pipeline {
     stage('Build & Test') {
       agent {
         node {
-          label 'WBC'
+          label 'docker'
         }
 
       }
