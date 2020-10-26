@@ -9,9 +9,7 @@ pipeline {
 
       }
       steps {
-        sh '''echo "Hello, Juyong Lee!"
-cd NSHC_WBC
-ls'''
+        sh 'ls'
       }
     }
 
