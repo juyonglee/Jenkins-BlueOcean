@@ -9,7 +9,8 @@ pipeline {
 
       }
       steps {
-        sh 'man -Dmaven.test.faulure.ignore clean package'
+        sh '''cd NSHC_WBC
+ls'''
         stash(name: 'build-test-artifacts', includes: '**/target/surefire-reports/TEST=*.xml,target/*.jar')
       }
     }
