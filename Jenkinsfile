@@ -9,7 +9,8 @@ pipeline {
 
       }
       steps {
-        sh '''cd NSHC_WBC
+        sh '''echo "Hello, Juyong Lee!"
+cd NSHC_WBC
 ls'''
         stash(name: 'build-test-artifacts', includes: '**/target/surefire-reports/TEST=*.xml,target/*.jar')
       }
