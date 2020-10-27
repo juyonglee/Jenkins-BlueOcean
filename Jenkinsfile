@@ -9,11 +9,10 @@ pipeline {
 
       }
       steps {
-        sh '''cd /NSHC_WBC/NSaferWhite/NWG_exe
+        sh '''cd /NSHC_WBC/NSaferWhite
 
-ls
 
-./build.sh'''
+./wbc.sh'''
       }
     }
 
