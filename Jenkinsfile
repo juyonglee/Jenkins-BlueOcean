@@ -9,7 +9,10 @@ pipeline {
 
       }
       steps {
-        sh 'cd /NSHC_WBC/NSaferWhite/NWG_exe'
+        sh '''cd /NSHC_WBC/NSaferWhite/NWG_exe
+ls
+chmod 755 build.sh
+build.sh'''
         sh '''ls
 chmod 755 build.sh'''
         sh './build.sh'
