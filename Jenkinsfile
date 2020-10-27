@@ -10,7 +10,8 @@ pipeline {
       }
       steps {
         sh 'cd /NSHC_WBC/NSaferWhite/NWG_exe'
-        sh 'gcc -m64 -D_LINUX *.c -I. -I../../gen_include -I../../tables -L../../lib/linux_x86_64 -lNSCrypto -lNWG -o genwbtable'
+        sh 'chmod 755 build.sh'
+        sh './build.sh'
       }
     }
 
