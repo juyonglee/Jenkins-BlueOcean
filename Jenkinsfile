@@ -9,7 +9,7 @@ pipeline {
 
       }
       steps {
-        sh '''cd /NSHC_WBC/NSaferWhite
+        sh '''cd /NSHC_WBC
 
 
 ./wbc.sh'''
