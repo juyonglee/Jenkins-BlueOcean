@@ -9,7 +9,9 @@ pipeline {
 
       }
       steps {
-        sh 'ls'
+        sh '''ls
+cd /NSHC_WBC/
+ls'''
       }
     }
 
