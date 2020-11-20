@@ -4,7 +4,7 @@ pipeline {
     stage('Build & Test') {
       agent {
         node {
-          label 'nshc_docker'
+          label 'nshc_docker_agent'
         }
 
       }
