@@ -4,15 +4,13 @@ pipeline {
     stage('Build & Test') {
       agent {
         node {
-          label 'WBC'
+          label 'nshc_docker'
         }
 
       }
       steps {
-        sh '''cd /NSHC_WBC
-
-
-./wbc.sh'''
+        sh 'mvn -Dmaven.test.faulure.ignore clean package'
+        stash(name: 'build-test-artifacts', includes: '**/target/surefire-repo')
       }
     }
 
